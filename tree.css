@@ -109,7 +109,9 @@ button {
 }
 
 .header {
-  background-color: #178A7F;
+  border: 1px solid #a6a6a6;
+  border-radius: 1em;
+  background: #178A7F;
   grid-column: span 12;
   display: grid;
   grid-template-columns: 1fr;
@@ -117,6 +119,9 @@ button {
 }
 
 .infoCard {
+  border: 1px solid #a6a6a6;
+  border-radius: 1em;
+  background: #178A7F;
   float: right;
   background-color: #178A7F;
   text-align: left;
@@ -149,13 +154,19 @@ button {
 }
 
 .content {
+  border: 1px solid #a6a6a6;
+  border-radius: 1em;
+  background: #178A7F;
   padding: 10%;
   grid-column: span 8;
   background-color: #178A7F;
   text-align: center;
 }
 .menu {
-  grid-column: span 4;
+  border: 1px solid #a6a6a6;
+  border-radius: 1em;
+  background: #178A7F;
+    grid-column: span 4;
   background-color: #178A7F;
   text-align: center;
   display: grid;
@@ -164,6 +175,7 @@ button {
 
 }
 .records {
+
   padding: 10%;
   text-align: center;
 }
@@ -172,7 +184,10 @@ button {
 }
 
 .footer {
-  padding: 5%;
+  border: 1px solid #a6a6a6;
+  border-radius: 1em;
+  background: #178A7F;
+   padding: 5%;
   grid-column: span 12;
   background-color: #178A7F;
   text-align: center;
