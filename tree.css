@@ -1,0 +1,266 @@
+/*Just for the form page*/
+
+
+/*Just for the about page*/
+.outer {
+
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 15px;
+  padding-bottom: 60px;
+}
+.aboutTheProject {
+  border-radius: 10%;
+  padding: 10%;
+  background-color: #178A7F;
+}
+
+/* More Information for Person layout */
+.wrapper {
+  padding-left: 20%;
+  padding-right: 20%;
+  color: #141311;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 175px 600px 300px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  color: white;
+  font-family: arial, verdana, tahoma;
+}
+
+.header {
+  background-color: #178A7F;
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr
+}
+
+.infoCard {
+  float: right;
+  background-color: #178A7F;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 11fr
+}
+
+.infoCard img {
+  border-radius: 50%;
+  max-height: 80%;
+  padding: 20px;
+  grid-column: span 4;
+}
+.nameDate {
+  display: grid;
+  grid-row: 1fr 1fr;
+}
+
+.nameDate h1 {
+  float: left;
+  margin-bottom: 0;
+  margin-top: 50;
+
+}
+
+.nameDate h2 {
+  float: left;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.content {
+  grid-column: span 8;
+  background-color: #178A7F;
+  text-align: center;
+}
+.menu {
+  grid-column: span 4;
+  background-color: #178A7F;
+  text-align: center;
+}
+
+.footer {
+  grid-column: span 12;
+  background-color: #178A7F;
+  text-align: center;
+}
+/* Navigation Bar Stuff */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #075659;
+}
+
+nav li {
+    float: left;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: arial, verdana, tahoma;
+    font-size: 14px;
+}
+.active {
+    background-color: #178A7F;
+}
+nav li a:hover {
+    background-color: #20BAB2;
+}
+/*Page formating*/
+body {
+  background-color: #141311;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #075659;
+    color: white;
+    font-family: arial, verdana, tahoma;
+    font-size: 14px;
+    text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: #20BAB2;
+}
+/*Everything beyond this point has to do with the tree itself*/
+
+#tree {
+  display: inline-block;
+  padding: 10px;
+}
+
+#tree * {
+  box-sizing: border-box;
+}
+
+#tree .branch {
+  padding: 5px 0 5px 20px;
+}
+
+#tree .branch:not(:first-child) {
+  margin-left: 170px;
+}
+
+#tree .branch:not(:first-child):after {
+  content: "";
+  width: 20px;
+  border-top: 1px solid #ccc;
+  position: absolute;
+  left: 150px;
+  top: 50%;
+  margin-top: 1px;
+}
+
+.entry {
+  position: relative;
+  min-height: 42px;
+  display: block;
+}
+
+.entry:before {
+  content: "";
+  height: 100%;
+  border-left: 1px solid #ccc;
+  position: absolute;
+  left: -20px;
+}
+
+.entry:first-child:after {
+  height: 10px;
+  border-radius: 10px 0 0 0;
+}
+
+.entry:first-child:before {
+  width: 10px;
+  height: 50%;
+  top: 50%;
+  margin-top: 1px;
+  border-radius: 10px 0 0 0;
+}
+
+.entry:after {
+  content: "";
+  width: 20px;
+  transition: border 0.5s;
+  border-top: 1px solid #ccc;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  margin-top: 1px;
+}
+
+.entry:last-child:before {
+  width: 10px;
+  height: 50%;
+  border-radius: 0 0 0 10px;
+}
+.entry:last-child:after {
+  height: 10px;
+  border-top: none;
+  transition: border 0.5s;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0 0 0 10px;
+  margin-top: -9px;
+}
+
+.entry:only-child:after {
+  width: 10px;
+  height: 0px;
+  margin-top: 1px;
+  border-radius: 0px;
+}
+
+.entry:only-child:before {
+  display: none;
+}
+
+.entry span {
+  border: 1px solid #ccc;
+  display: block;
+  min-width: 150px;
+  padding: 5px 10px;
+  line-height: 20px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -15px;
+  color: #20BAB2;
+  font-family: arial, verdana, tahoma;
+  font-size: 14px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.entry span a {
+  text-decoration: none;
+  color: white;/*#20BAB2;*/
+}
+
+#tree .entry span:hover,
+#tree .entry span:hover + .branch .entry span {
+  background: #178A7F;
+  color: #000;
+  border-color: #a6a6a6;
+}
+
+#tree .entry span:hover + .branch .entry::after,
+#tree .entry span:hover + .branch .entry::before,
+#tree .entry span:hover + .branch::before,
+#tree .entry span:hover + .branch .branch::before {
+  border-color: #a6a6a6;
+}
+#tree .entry span a:hover {
+  color: white;
+}

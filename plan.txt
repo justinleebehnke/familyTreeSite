@@ -1,0 +1,27 @@
+Must be in HTML & css
+Different from the original site
+
+Provide fake data for your website
+You could mock up what a clone of family search might look like
+
+Deliverables:
+
+1. Home Page : //the tree itself will be the home Screen? No.. I can use a grid page for that instead
+2. 3+ additional pages: //contact me form //About me // the tree itself //about the project
+3. The site uses some images: //these could be in the tree tiles
+4. the tree page uses css grid or flex box... probably just grid though
+5. The contact me page will have a form
+6. I need to have a footer with a link to my github repo
+
+It needs to be on my digital ocean server.
+I will make sure the form is working and all links
+
+So I think I will use the basic template that that guy created.
+Only have it do my tree, and include links that all link to informational pages for each individual
+Family member. (for the mockup they will all link to the dummy page) but it will be formatted using grid
+to display the person's information.
+
+// the tree itself where all parts are links to more information about each person
+// a contact me page that uses the form
+// an about the project page
+// a dummy extra content page that links back to the tree page // this will use a grid layout
